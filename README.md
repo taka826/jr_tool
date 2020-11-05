@@ -6,10 +6,10 @@
 | encrypted_password | string     | null: false      |
 
 ### Association
-has_many :caluculations
+has_many :railways
 
 
-## caluculations
+## railways
 
 | Column             | Type       | Options           |
 | ------------------ | ---------- | ----------------- |
