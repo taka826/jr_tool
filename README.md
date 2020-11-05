@@ -1,24 +1,21 @@
-# README
+## users
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column             | Type       | Options          |
+| ------------------ | ---------- | ---------------- |
+| nickname           | string     | null: false      |
+| encrypted_password | string     | null: false      |
 
-Things you may want to cover:
+### Association
+has_many :caluculations
 
-* Ruby version
 
-* System dependencies
+## caluculations
 
-* Configuration
+| Column             | Type       | Options           |
+| ------------------ | ---------- | ----------------- |
+| junction_id        | integer    | null: false       |
+| price              | integer    | null: false       |
+| terminal_id        | integer    | null: false       |
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+belongs_to :user
